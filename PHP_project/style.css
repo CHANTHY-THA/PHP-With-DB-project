@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(190, 196, 167);
+}
+
+img {
+    width: 100%;
+    height: 200px;
+}
+.image_div{
+    border: 1px solid rgb(138, 212, 212);
+}
+p{
+    padding: 10px;
+}
+h4{
+    padding-left: 10px;
+}
+.shop{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.images{
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 20%;
+}
