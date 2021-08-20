@@ -1,9 +1,10 @@
 <?php
+
 require_once('database/database.php');
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $isUpdate = updateProduct($_POST);
+    $isUpdate = updateCustomer($_POST);
     
     if($isUpdate){
-        header('Location: index.php?page=shop_now');
+        header('Location: index.php?page=users');
     }
 }

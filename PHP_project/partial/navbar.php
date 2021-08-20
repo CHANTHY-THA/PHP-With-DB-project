@@ -16,7 +16,7 @@
           <a class="nav-link" href="?page=shop_now">Shop Now<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?page=users">User management</a>
+          <a class="nav-link" href="">Service</a>
         </li>
       
       
@@ -30,10 +30,10 @@
     
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="?page=contact_us">Login</a>
+        <a class="nav-link" href="">Login</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="?page=orders">Card</a>
+        <a class="nav-link" href="?page=users">Management</a>
       </li>
     </ul>
     

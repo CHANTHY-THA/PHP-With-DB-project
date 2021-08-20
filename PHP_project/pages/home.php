@@ -1,3 +1,9 @@
+<?php
+   include_once('partial/header.php');
+   include_once('partial/navbar.php');
+   include_once('partial/footer.php');
+?>
+
 <?php include_once('partial/header.php'); ?>
    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -50,157 +56,44 @@
    </div>
    <!-- // card  our product -->
    <h3 class="p-4">New Product</h3>
-
    <div class="container-fluid d-flex justify-content-around">
-      <div class="card mb-3 mr-5 w-75">
-         <div class="d-flex justify-content-between">
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-   
+      <?php
+         require_once('database/database.php');
+         $result = getproduct3();
+         foreach($result as $row):
+      ?>
+         <div class="card">
+            <img src="images/<?=$row['image']?>" class="cagegory">
+            <h5 style="text-align: center;"><?=$row['price']?>$</h>
+            <p style="text-align: center"><?=$row['title']?></p>
          </div>
-      </div>
-      <div class="card mb-3 w-75">
-         <div class="d-flex justify-content-between">
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- ----------------------------------------------------- -->
-   
-   <div class="container-fluid d-flex justify-content-around">
-      <div class="card mb-3 mr-5 w-75">
-         <div class="d-flex justify-content-between">
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-   
-         </div>
-      </div>
-      <div class="card mb-3 w-75">
-         <div class="d-flex justify-content-between">
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-            <div class="card">
-               <img src="images/shop.jpg" class="cagegory">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-            </div>
-         </div>
-      </div>
+      <?php endforeach;?>
    </div>
   
    <!-- // Outr products  -->
    <h3 class="p-4">Our Product</h3>
-
-   <div class="container-fluid mb-5">
-      <div class="mt-3 d-flex justify-content-between">
-         <div class="mg">
-            <img src="images/shop.jpg" class="left" alt="">
-         </div>
-         <div class="image w-100">
-            <div class="d-flex">
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-            </div>
-         <div class="image w-100">
-            <div class="d-flex">
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-               <div class="card">
-                  <img src="images/shop.jpg" class="pro">
-                  <p style="text-align: center;">20$</p>
-                  <p style="text-align: center">Clothes in thailand</p>
-               </div>
-            </div>
-
-         </div>
-      </div>
-   </div>
+   <div class="shop p-4">
+            <?php
+                require_once('database/database.php');
+                $result = getproduct();
+                foreach($result as $row):
+            ?>
+                <div class="images">
+                    <div class="card">
+                        <img class="img" src="images/<?=$row['image']?>">
+                        <p class="p-2"><?=$row['title']?></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="ml-2"><?=$row['price']."$"?></h3>
+                            <p class="mr-2"><?=$row['postDate']?></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
    <!-- // Footer -->
    <h3 class="p-4">My location</h3>
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d977.2520564619016!2d104.88601282915336!3d11.551267313429584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDMzJzA0LjYiTiAxMDTCsDUzJzExLjYiRQ!5e0!3m2!1sen!2skh!4v1629361585404!5m2!1sen!2skh" width="800" height="350" style="border:0;margin-left:2%" allowfullscreen="" loading="lazy"></iframe>
-   
-   
-     
-      
    
 <?php require_once('partial/footer.php'); ?>
 

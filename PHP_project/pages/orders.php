@@ -1,35 +1,38 @@
 <?php include_once('partial/header.php'); ?>
 
-    <div class="container-fluid">
-
-        <div class="d-flex justify-content-end p-2">
-            <a href="create_html.php" class="btn btn-primary">+ Add customer</a>
-        </div>
-        
-        <div class="usermanagement p-4">
-            <?php
-                require_once('database/database.php');
-                $result = Orders();
-                foreach($result as $row):
-            ?>
-            <div class="card w-100">
-                <div class="card-body d-flex justify-content-between">
-                    <div class="name">
-                        <p class="card-text"><?=$row['firstname']?> <?=$row['lastname']?></p>
-                    </div>
-                   
-                    <div class="action">
-                        <a href="" class="btn btn-primary btn-sm mr-2 btn-1"><i class="fa fa-pencil"></i></a>
-                        <a href="" class="btn btn-danger btn-sm btn-2"><i class="fa fa-trash"></i></a>
-                        <p class="card-text btn-1"><?=$row['orderdate']?></p>
-                    </div>
-                </div>
-            </div>
-            
-            <?php endforeach; ?>
-        </div>
-      
+    <div class="d-flex justify-content-end p-2">
+        <a href="" class="btn btn-primary">Order History</a>
     </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Customer name</th>
+                <th scope="col">Product name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Order Date</th>
+                <th scope="col">Remove order</th>
+            </tr>
+        </thead>
+                
+        <?php
+            require_once('database/database.php');
+            $result = Orders();
+            foreach($result as $row):
+        ?>
+        <tbody>
+            <tr>
+                <td><?=$row['name']?></td>
+                <td>Testing</td>
+                <td>Testing</td>
+                <td><?=$row['orderdate']?></td>
+                <td>
+                <a href="delete_order.php?id=<?=$row['orderid']?>" class="btn btn-danger btn-sm">Delete</i></a>     
+                </td>
+            </tr>
+        </tbody>      
+        <?php endforeach; ?>
+    </table> 
+        
 
 <?php require_once('partial/footer.php'); ?>
 

@@ -19,6 +19,13 @@
                <input type="number" class="form-control" name="price" value="<?=$item['price']?>">
             </div>
             <div class="form-group">
+                <select name="category">
+                    <option value="1">Clothes</option>
+                    <option value="2">Food</option>
+                    <option value="3">Electronice</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <input type="submit" class="btn btn-danger btn-block" name="update" value="Update Product">
             </div>
         </form>
