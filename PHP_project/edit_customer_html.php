@@ -11,10 +11,10 @@
             <input type="hidden" value="<?=$item['customerid'] ?>" name="id">
     
             <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Name" value="<?=$item['name']?>">
+                <input type="text" name="username" class="form-control" placeholder="Name" value="<?=$item['username']?>">
             </div>
             <div class="form-group">
-               <input type="email" class="form-control" name="email" placeholder="email address" value="<?=$item['email']?>">
+               <input type="password" class="form-control" name="password" placeholder="password" value="<?=$item['password']?>">
             </div>
             <div class="form-group">
                <input type="number" class="form-control" name="phone" placeholder="phone number" value="<?=$item['phone']?>">
@@ -22,9 +22,11 @@
             <div class="form-group">
                <input type="text" class="form-control" name="country" placeholder="country" value="<?=$item['country']?>">
             </div>
-            
             <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-block w-50 ml" name="customer" value="submit">
+                <input type="text" name="role" class="form-control" value="<?=$item['role']?>">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-block w-50 ml" name="customer" value="Update user">
             </div>
            
         </form>

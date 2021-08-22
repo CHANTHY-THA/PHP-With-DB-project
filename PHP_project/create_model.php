@@ -6,15 +6,15 @@
     
         // Get the name of image
         $image = $_FILES['image']['name'];
-        $title = $_POST['title'];
+        $productname = $_POST['productname'];
         $price = $_POST['price'];
         $category = $_POST['category'];
        
-        if(empty($image and $title and $price)){
+        if(empty($image and $productname and $price)){
             header('Location: index.php?page=shop_now');
         }else{
             $targe = "images/".basename($image);
-            $isadded = addproduct($image,$title,$price,$category);
+            $isadded = addproduct($image,$productname,$price,$category);
             if(move_uploaded_file($_FILES['image']['tmp_name'] , $targe)){
                 $msg = "Image uploaded succsessfully";
             }else{

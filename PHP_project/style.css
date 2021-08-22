@@ -13,11 +13,6 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.logo{
-    width: 100px;
-    height: 50px;
-    background-size: cover;
-}
 
 .images{
     margin-left: 1%;
@@ -88,6 +83,7 @@ h4:first-letter{
     color: black;
     background: #fff;
 }
+
 
 
 

@@ -1,4 +1,3 @@
-<?php include_once('partial/header.php'); ?>
 
     <div class="d-flex justify-content-end p-2">
         <a href="" class="btn btn-primary">Order History</a>
@@ -21,7 +20,7 @@
         ?>
         <tbody>
             <tr>
-                <td><?=$row['name']?></td>
+                <td><?=$row['username']?></td>
                 <td>Testing</td>
                 <td>Testing</td>
                 <td><?=$row['orderdate']?></td>
@@ -32,9 +31,6 @@
         </tbody>      
         <?php endforeach; ?>
     </table> 
-        
-
-<?php require_once('partial/footer.php'); ?>
 
 
 

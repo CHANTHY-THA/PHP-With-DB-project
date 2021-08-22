@@ -4,7 +4,7 @@
         <form method="POST" action="create_model.php" enctype="multipart/form-data">
             <input type="hidden" name="size" value="1000000">
             <div class="form-group">
-                <input type="text" name="title" class="form-control" placeholder="Product name" cols="40" rows="4">
+                <input type="text" name="productname" class="form-control" placeholder="Product name" cols="40" rows="4">
             </div>
             <div class="form-group">
                <input type="number" class="form-control" name="price" placeholder="price">

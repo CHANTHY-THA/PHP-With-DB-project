@@ -1,13 +1,13 @@
 <?php
 require_once('database/database.php');
-if(isset($_POST['customer'])){
+if(isset($_POST['user'])){
 
-    if(empty($_POST['name'] and $_POST['email'] and $_POST['phone'] and $_POST['country'])){
+    if(empty($_POST['username'] and $_POST['password'] and $_POST['phone'] and $_POST['country'])){
         echo "You must enter your information please!";
     }else{
         $isCreated = adduser($_POST);
         if($isCreated){
-            header('Location: index.php?page=users');
+            header('Location: index.php?page=login');
         }
     }
     

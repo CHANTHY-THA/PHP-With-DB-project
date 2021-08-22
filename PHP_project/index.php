@@ -9,6 +9,6 @@
         include_once('pages/'.$page.'.php');
 
     }else{
-        include_once('pages/home.php');
+        include_once('pages/login.php');
     }
 ?>          
