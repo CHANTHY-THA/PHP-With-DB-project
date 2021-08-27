@@ -1,5 +1,4 @@
-
-<?php include_once('partial/header.php')?>
+<?php include_once('partial/header.php')?>;
     <div class="container p-4 w-50">
         <form method="POST" action="create_model.php" enctype="multipart/form-data">
             <input type="hidden" name="size" value="1000000">
@@ -26,6 +25,7 @@
             </div>
         </form>
     </div>
-<?php include_once('partial/footer.php') ?>
+    
+    <?php include_once('partial/footer.php')?>;
 
 

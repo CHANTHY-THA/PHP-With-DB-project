@@ -13,7 +13,7 @@
             <input type="hidden" value="<?=$item['pro_id'] ?>" name="id">
            
             <div class="form-group">
-                <input type="text" name="title" class="form-control" placeholder="Title of product" value="<?=$item['title']?>">
+                <input type="text" name="productname" class="form-control" placeholder="productname of product" value="<?=$item['productname']?>">
             </div>
             <div class="form-group">
                <input type="number" class="form-control" name="price" value="<?=$item['price']?>">

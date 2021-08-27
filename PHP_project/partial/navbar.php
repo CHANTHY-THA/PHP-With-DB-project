@@ -6,7 +6,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <img src="images/Tshop-logo.jpg" class="logo" alt="">
+      <img src="images/Tshop-logo.jpg" class="logo" alt="" style="width: 200px;height:50px">
       <a href="" class="btn btn-success btn-sm mr-3 ml-5"><i class="fa fa-home"></i></a>
       
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">

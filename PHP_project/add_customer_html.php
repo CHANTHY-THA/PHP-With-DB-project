@@ -1,5 +1,6 @@
 
 <?php include_once('partial/header.php')?>
+
     <div class="container p-4 w-50">
         <form method="POST" action="create_customer_model.php" enctype="multipart/form-data">
             <div class="form-group">

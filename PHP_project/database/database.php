@@ -108,11 +108,11 @@
     // Update update data -----------------------------------------------------------
 
     function updateProduct($value){
-        $title = $value['title'];
+        $productname = $value['productname'];
         $price = $value['price'];
         $category = $value['category'];
         $id = $value['id'];
-        return db()->query("UPDATE products SET title = '$title', price = '$price' , categoryid = '$category' WHERE pro_id = $id ");
+        return db()->query("UPDATE products SET productname = '$productname', price = '$price' , categoryid = '$category' WHERE pro_id = $id ");
     }
     function updateCustomer($value){
         $username = trim($value['username']);
